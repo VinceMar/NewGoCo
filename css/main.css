@@ -1,21 +1,141 @@
-.col-md-3,
-.col-md-6 {
+body {
+    font-family: "微软雅黑";
+}
+
+.col-md-2,
+.col-md-7,
+.col-md-3 {
     padding: 0;
 }
 
+
+/* 左侧栏 */
 .left-sidebar {
     position: fixed;
-    width: 20%;
+    width: 15%;
     background: #2c3e50;
-    height:100vh;
-    padding: 20px;
+    height: 100vh;
     color: white;
 }
 
+.left-sidebar .title,
+.left-sidebar p {
+    /* text-align: center; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.left-sidebar p {
+    font-size: 18px;
+}
+
+.list {
+    padding: 0;
+    margin-top: 200px;
+}
+
+.list .list-item {
+    padding: 20px 50px 20px;
+    list-style: none;
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.list .list-item:hover {
+    background: #1a2938;
+}
+
+
+/* 主内容 */
 .main {
+    padding-top: 20px;
     padding-right: 40px;
 }
 
+.artical {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+}
+
+.artical:last-child {
+    border: none;
+}
+
+.artical .title {
+    display: inline-block;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.artical .title:hover {
+    color: #7f8c8d;
+}
+
+.artical .info {
+    color: #7f8c8d;
+}
+
+.artical .artical-content {
+    line-height: 2;
+    text-indent: 2em;
+}
+
+/* 右侧栏 */
 .right-sidebar {
     padding-right: 40px;
+    padding-top: 20px;
+    position: fixed;
+    width: 22%;
+    height: 100vh; 
+}
+
+.section {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+}
+
+.section:last-child,
+.section:first-child {
+    border: none;
+}
+
+.section form {
+    margin-bottom: 20px;
+}
+
+.section .search-txt {
+    border-radius: 8px;
+    outline: none;
+    padding: 8px 15px;
+}
+
+.section .search-btn {
+    margin-left: 20px;
+    background: #ecf0f1;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: .2s;
+}
+
+.section .search-btn:hover {
+    background: #95a5a6;
+}
+
+.artical-kind .title,
+.kind-link .title {
+    margin-bottom: 25px;
+}
+
+.artical-kind .kind {
+    padding-left: 30px;
+}
+
+.kind-link li {
+    padding: 10px;
 }
