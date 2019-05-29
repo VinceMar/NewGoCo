@@ -1,0 +1,21 @@
+.col-md-3,
+.col-md-6 {
+    padding: 0;
+}
+
+.left-sidebar {
+    position: fixed;
+    width: 20%;
+    background: #2c3e50;
+    height:100vh;
+    padding: 20px;
+    color: white;
+}
+
+.main {
+    padding-right: 40px;
+}
+
+.right-sidebar {
+    padding-right: 40px;
+}
