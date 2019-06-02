@@ -99,6 +99,10 @@ body {
     -webkit-line-clamp: 3;
 }
 
+.artical-content .content-img {
+
+}
+
 /* 右侧栏 */
 .right-sidebar {
     padding-right: 40px;
@@ -155,4 +159,14 @@ body {
 
 .kind-link li {
     padding: 10px;
+}
+
+.kind-link a {
+    color: #000;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.kind-link a:hover {
+    color: #7f8c8d;
 }
