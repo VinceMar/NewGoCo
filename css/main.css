@@ -16,14 +16,21 @@ body {
     background: #2c3e50;
     height: 100vh;
     color: white;
+    text-align: center;
+}
+
+.left-sidebar .head-img {
+    width: 150px;
+    transition: 1s;
+}
+
+.left-sidebar .head-img:hover {
+    transform: rotate(360deg);
 }
 
 .left-sidebar .title,
-.left-sidebar p {
-    /* text-align: center; */
+.left-sidebar .head-img {
     margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
 }
 
 .left-sidebar p {
@@ -32,13 +39,13 @@ body {
 
 .list {
     padding: 0;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .list .list-item {
     padding: 20px 50px 20px;
     list-style: none;
-    font-size: 18px;
+    font-size: 25px;
     transition: .3s;
     cursor: pointer;
 }
@@ -55,9 +62,10 @@ body {
 }
 
 .artical {
+    margin-top: 15px;
     margin-bottom: 50px;
-    border-bottom: 1px solid #000;
-    padding-bottom: 20px;
+    border-bottom: 1px solid #bdc3c7;
+    height: 200px;
 }
 
 .artical:last-child {
@@ -82,6 +90,13 @@ body {
 .artical .artical-content {
     line-height: 2;
     text-indent: 2em;
+    overflow: hidden;
+    /*将对象作为弹性伸缩盒子模型显示*/
+    display: -webkit-box;
+    /*设置子元素排列方式*/
+    -webkit-box-orient: vertical;
+    /*设置显示的行数，多出的部分会显示为...*/
+    -webkit-line-clamp: 3;
 }
 
 /* 右侧栏 */
@@ -90,7 +105,7 @@ body {
     padding-top: 20px;
     position: fixed;
     width: 22%;
-    height: 100vh; 
+    height: 100vh;
 }
 
 .section {
@@ -105,18 +120,20 @@ body {
 }
 
 .section form {
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .section .search-txt {
     border-radius: 8px;
     outline: none;
     padding: 8px 15px;
+    width: 300px;
 }
 
 .section .search-btn {
     margin-left: 20px;
-    background: #ecf0f1;
+    background: none;
+    outline: none;
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -124,7 +141,7 @@ body {
 }
 
 .section .search-btn:hover {
-    background: #95a5a6;
+    background: #ecf0f1;
 }
 
 .artical-kind .title,
